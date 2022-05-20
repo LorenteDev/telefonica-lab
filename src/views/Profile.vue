@@ -1,4 +1,5 @@
 <template>
+  <Header />
   <div id="profile">
     <img
       id="profile-avatar"
@@ -10,10 +11,14 @@
 </template>
 
 <script>
+import Header from '@/components/Header'
 import axios from 'axios'
 
 export default {
   name: 'Profile',
+  components: {
+    Header
+  },
   data () {
     return {
       avatar: '',
