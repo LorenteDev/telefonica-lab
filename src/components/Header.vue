@@ -1,7 +1,11 @@
 <template>
   <header>
     <div id="header-content">
-      <h1><mdicon name="lightning-bolt" /> three pics</h1>
+      <router-link
+        id="brand"
+        to="/posts">
+        <h1><mdicon name="lightning-bolt" /> three pics</h1>
+      </router-link>
       <router-link
         v-if="isUserLogged"
         id="profile-link"
@@ -41,11 +45,15 @@ header {
   max-width: 500px;
   margin: 0 auto;
 }
-h1 {
+#brand > h1 {
   font-size: 1.6rem;
   margin: 0;
 }
-.mdi .mdi-account-circle {
+#brand,
+#brand:visited,
+#profile-link,
+#profile-link:visited {
   color: #2C2C2D;
+  text-decoration: none !important;
 }
 </style>
