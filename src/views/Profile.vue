@@ -21,7 +21,7 @@ export default {
       bio: ''
     }
   },
-  mounted() {
+  mounted () {
     axios
       .get('https://react-test.apps-dev.tid.es/profile', {
         headers: {
