@@ -52,6 +52,7 @@ export default {
   },
   methods: {
     likePost () {
+      // No he conseguido que esta llamada sea autorizada
       axios
         .post(`https://react-test.apps-dev.tid.es/posts/${this.id}/like`, {
           headers: {
